@@ -3,23 +3,19 @@ import random
 import socket
 import threading
 
-print("""
-_▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄
-───█▒▒░░░░░░░░░▒▒█───
-────█░░█░░░░░█░░█────
-─▄▄──█░░░▀█▀░░░█──▄▄─
-█░░█─▀▄░░░░░░░▄▀─█░░█
-█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
-█   ▀▀▀▀▀▀▀   ▀  ▀▀▀▀▀▀▀  ▀
-█        ▀       ▀        ▀
-█       ▀     ▀  ▀▀▀▀▀▀▀  ▀
-█     ▀       ▀  ▀        ▀
-█   ▀▀▀▀▀▀▀   ▀  ▀▀▀▀▀▀▀  ▀▀▀▀▀
-█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█""")
+print("""\033[92m\n
 
-ip = str(input(" IP : "))
-port = int(input(" PORT : "))
-choice = str(input(" READY MANIEZ? (y/n) : "))
+▄▄▌        .▄▄ · .▄▄ ·    
+██•  ▪     ▐█ ▀. ▐█ ▀.    
+██▪   ▄█▀▄ ▄▀▀▀█▄▄▀▀▀█▄   
+▐█▌▐▌▐█▌.▐▌▐█▄▪▐█▐█▄▪▐█   
+.▀▀▀  ▀█▄▀▪ ▀▀▀▀  ▀▀▀▀  ▀ 
+
+""")
+
+ip = str(input(" IP TARGET : "))
+port = int(input(" PORT TARGET : "))
+choice = str(input(" READY? (y/n) : "))
 times = int(input(" PACKETS : "))
 threads = int(input(" THREADS : "))
 def run():
