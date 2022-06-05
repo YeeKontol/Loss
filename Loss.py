@@ -11,7 +11,7 @@ print("""\033[92m\n
 ▐█▌▐▌▐█▌.▐▌▐█▄▪▐█▐█▄▪▐█   
 .▀▀▀  ▀█▄▀▪ ▀▀▀▀  ▀▀▀▀  ▀ 
 
-""")
+\033[92m\n""")
 
 ip = str(input(" IP TARGET : "))
 port = int(input(" PORT TARGET : "))
